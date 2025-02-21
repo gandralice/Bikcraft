@@ -4,7 +4,8 @@ Este projeto foi desenvolvido durante o curso de HTML e CSS da Origamid. Nele, e
 
 ## 📷 Demonstração
 
-Você pode visualizar o projeto ao vivo aqui: 
+Você pode visualizar o projeto ao vivo aqui: [GitHub Pages](https://gandralice.github.io/bikcraft)
+
 
 ## 🛠 Tecnologias Utilizadas
 
