@@ -17,4 +17,4 @@ Responsividade
 
 Acessibilidade Web
 
-### Se gostou do projeto, deixe uma ⭐ e contribua com sugestões!
+### Se gostou do projeto, deixe uma ⭐
