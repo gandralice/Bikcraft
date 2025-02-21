@@ -1,0 +1,244 @@
+/* Estilos globais */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eeeeee;
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+  overflow-x: hidden;
+}
+
+header {
+  justify-items: center;
+}
+
+header img {
+  margin: 70px 0 40px 0;
+}
+
+/* Imagem de bicicleta */
+.bicicleta {
+  max-width: 100%;
+  display: block;
+  border-radius: 2px;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+/* Listas */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Parágrafos e títulos */
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 20px 30px;
+}
+
+.menu a {
+  display: block;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 5px;
+  border: 2px solid #ffffff;
+}
+
+.menu a:hover {
+  border-bottom: 2px solid #c9c9c9;
+}
+
+/* Conteúdo */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 900px;
+}
+
+/* Primeira seção (pt1) */
+.pt1 {
+  background-color: #ffffff;
+  border-radius: 2px;
+  padding: 30px;
+  display: grid;
+  place-items: center end;
+  position: relative;
+}
+
+.pt1::before {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #ee2211;
+  position: absolute;
+  right: -30px;
+  top: 15px;
+}
+
+#pt1h2 {
+  font-size: 1.8rem;
+}
+
+#p1 {
+  text-align: right;
+}
+
+/* Botão */
+.btn {
+  background-color: #ee2211;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #b1190c;
+  transition: 0.3s;
+}
+
+/* Subtítulo */
+.sub {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-align: right;
+  color: #0000005d;
+  padding: 30px;
+  align-self: center;
+}
+
+/* Vantagens */
+.vantagens {
+  background-color: #ffffff;
+  border-radius: 2px;
+  padding: 30px;
+}
+
+.vantagens-item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  padding: 12px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+}
+
+.vantagens-item:hover {
+  border-left: 3px solid #c9c9c9;
+}
+
+.vantagens-item:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
+.vantagens-item p {
+  grid-column: 2;
+}
+
+/* Rodapé */
+footer {
+  background-color: #696969;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* Media queries */
+@media (max-width: 780px) {
+  p {
+    font-size: 1rem;
+  }
+
+  .pt1 {
+    gap: 8px;
+  }
+
+  #pt1h2 {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    justify-self: center;
+    margin-top: 5px;
+  }
+
+  .sub {
+    word-break: break-all;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    gap: 20px;
+  }
+  .content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .menu {
+    gap: 40px;
+  }
+
+  .pt1 {
+    gap: 15px;
+  }
+
+  .pt1 h2,
+  p {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .pt1 p {
+    max-width: 45ch;
+  }
+
+  .pt1::before {
+    display: none;
+  }
+
+  .sub {
+    text-align: center;
+    margin-top: 50px;
+    word-break: keep-all;
+    font-size: 3rem;
+  }
+
+  .vantagens-item {
+    margin: 0 20px;
+  }
+  .vantagens-item h3 {
+    font-size: 1.1em;
+  }
+  .vantagens-item p {
+    max-width: 40ch;
+    font-size: 0.9rem;
+  }
+}
